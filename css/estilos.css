@@ -1,0 +1,75 @@
+/* Colors */
+/* #0b0b0b */
+/* Icon */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?vtmydu');
+    src:  url('../fonts/icomoon.eot?vtmydu#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?vtmydu') format('truetype'),
+      url('../fonts/icomoon.woff?vtmydu') format('woff'),
+      url('../fonts/icomoon.svg?vtmydu#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e900";
+  }
+  
+/* Body */
+body{
+    margin: 0;
+}
+/* Header */
+.header {
+    width: 100%;
+    height: 90px;
+    background: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Exo', sans-serif;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    /* display: flex;
+    align-items: center; */
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+    list-style: none;
+}
+
+.header ol li{
+    height: inherit;
+}
+
+/* Conteiner Properties */
+.container{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
