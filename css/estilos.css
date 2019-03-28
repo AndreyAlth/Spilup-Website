@@ -31,23 +31,24 @@
     content: "\e900";
   }
   
-/* Body */
+/* ---Body--- */
 body{
     margin: 0;
 }
-/* Header */
+/* ---Header--- */
 .header {
     width: 100%;
-    height: 50px;
-    background: gray;
+    height: 44px;
+    background: #1B2127;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 15px;
+    position: fixed;
 }
 
-.header a {
+.header .container a {
     color: white;
     text-decoration: none;
     padding: 0 10px;
@@ -68,7 +69,7 @@ body{
     font-size: 25px;
 } */
 
-/* Burguer Menu */
+/* ---Burguer Menu--- */
 .burguer-menu{
     width: 19px;
     height: 19px;
@@ -87,19 +88,107 @@ body{
 
 .container-menu{
     width: 19px;
-    height: 19px;
+    height: 10px;
     padding-right: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    position: relative;
+    z-index: 2;
+
 }
 
-/* Conteiner Properties */
+.m{
+    width: inherit;
+    height: 2px;
+    background-color: white;
+    margin: 2px 0 ;
+}
+
+.bar1{
+    /* animation-name: none; */
+    /* animation-duration: 0.4s; */
+    transition: 0.4s;
+}
+
+.bar2{
+    /* animation-name: none; */
+    /* animation-duration: 0.4s; */
+    transition: 0.4s;
+}
+
+.change1{
+    transform: translateY(3px)  scale(0.84) rotate(45deg);
+}
+
+.change2{
+    transform: translateY(-3px) scale(0.84) rotate(-45deg);
+}
+
+.sidenav{
+    height: 100%;
+    width: 150px;
+    background-color: #1B2127;
+    padding: 44px 10px 10px;
+    position: fixed;
+    z-index: 1  ;
+    top: 0;
+    right: -200px;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.cgnav{
+    right: 0;
+}
+
+.sidenav a{
+    color: #BBBBBB;
+    font-size: 15px;
+    padding: 0px 10px 20px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover{
+    color: #EEEEEE;
+}
+
+/* @keyframes rotation1{
+    from{
+        transform: rotate(0);
+        transform: translateY(3px);
+    }
+    to{
+        transform: translateY(3px)  scale(0.84) rotate(45deg);
+    }
+}
+
+@keyframes rotation2{
+    from{
+        transform: rotate(0);
+        transform: translateY(-3px);
+    }
+    to{
+        transform: translateY(-3px) scale(0.84) rotate(-45deg);
+    }
+} */
+
+
+/* ---Conteiner Properties--- */
 .container{
     width: 100%;
     height: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* ---Hero--- */
+.hero{
+    width: 100%;
+    height: 1000px;
+    background-color: cornflowerblue;
 }
 

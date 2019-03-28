@@ -26,9 +26,16 @@
                     </li>
                 </ol>
             </nav>
-            <div class="container-menu">
-                <i class="icon-menu burguer-menu" id="burguer-menu" ></i>
+            <div class="container-menu" id= "animation-menu">
+                <!-- <i class="icon-menu burguer-menu" id="burguer-menu" ></i> -->
+                <div class= "m bar1" id= "bar1"></div>
+                <div class="m bar2" id = "bar2"></div>
             </div>
+        </div>
+        <div id="sidenav" class="sidenav">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
         </div>
     </header>
     <section class="hero" >
@@ -41,5 +48,27 @@
     </section>
     <footer class="footer">
     </footer>
+    <script>
+        const burgerBotton = document.getElementById("animation-menu");
+        const burgerBar1 = document.getElementById("bar1");
+        const burgerBar2 = document.getElementById("bar2");
+        const sidebar = document.getElementById("sidenav");
+
+        burgerBotton.addEventListener("click", animationMenu);
+        burgerBar1.addEventListener("animationend", pauseAnimaion);
+        function animationMenu(evento){
+            console.log("Si funciona");
+            // burgerBar1.style.animationName = "rotation1";
+            // burgerBar2.style.animationName = "rotation2";
+            burgerBar1.classList.toggle("change1");
+            burgerBar2.classList.toggle("change2");
+            sidebar.classList.toggle("cgnav")
+        }
+
+        // function pauseAnimaion() {
+        //     console.log("termino la animation")
+        //     burgerBar1.style.animationPlayState = "paused";
+        // }
+    </script>
 </body>
 </html>
