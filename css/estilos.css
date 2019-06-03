@@ -60,6 +60,7 @@ body{
     display: flex;
     height: inherit;
     list-style: none;
+    padding: 0;
 }
 
 .header ol li{
@@ -181,14 +182,47 @@ body{
     width: 100%;
     height: inherit;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 /* ---Hero--- */
 .hero{
+    color: white;
     width: 100%;
-    height: 1000px;
+    height: 100vh;
     background-color: cornflowerblue;
+}
+
+.container-hero{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; 
+    font-weight: 400;
+    font-family:'Fjalla One',sans-serif;
+    font-size: 44px;
+    /* 'Fjalla One' 450*/
+    /* Roboto 550 */
+    /* Lato 600 */
+}
+
+/* -----Catalog-Games----- */
+.container-catalog{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; 
+    font-weight: 450;
+    font-family:'Fjalla One',sans-serif;
+    font-size: 42px;
+    /* 'Fjalla One' 450*/
+    /* Roboto 550 */
+    /* Lato 600 */
 }
 
