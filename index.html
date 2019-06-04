@@ -14,9 +14,12 @@
     <header class="header">
         <div class="container">
             <a class = "tipografia-name" href="#Spilup">Games</a>
-            <nav class="menu">
+            <nav class="header-menu">
                 <ol>
-                    <li>
+                    <div class="header container image">
+                        <img src="./Images/logo.png" alt="">
+                    </div>
+                    <!-- <li>
                         <a class="link" href="#Game">Game</a>
                     </li>
                     <li>
@@ -24,13 +27,15 @@
                     </li>
                     <li>
                         <a class="link" href="#Equipos">Equipos</a>
-                    </li>
+                    </li> -->
                 </ol>
             </nav>
-            <div class="container-menu" id= "animation-menu">
-                <!-- <i class="icon-menu burguer-menu" id="burguer-menu" ></i> -->
-                <div class= "m bar1" id= "bar1"></div>
-                <div class="m bar2" id = "bar2"></div>
+            <div class="square-menu">
+                <div class="container-menu" id= "animation-menu">
+                    <!-- <i class="icon-menu burguer-menu" id="burguer-menu" ></i> -->
+                    <div class= "m bar1" id= "bar1"></div>
+                    <div class="m bar2" id = "bar2"></div>
+                </div>
             </div>
         </div>
         <div id="sidenav" class="sidenav">
@@ -40,11 +45,14 @@
         </div>
     </header>
     <section class="hero" >
-        <div class="container-hero">
+        <video id="video" autoplay muted src="./video/SOT.mp4"></video>
+        <canvas id="c" class="canvas-video">
+        </canvas>
+        <!-- <div class="container-hero">
             <h2>Games that redifine games</h2>
-        </div>
+        </div> -->
     </section>
-    <section class="Catalog-games">
+    <!-- <section class="Catalog-games">
         <div class="container-catalog">
             Nuestros juegos
         </div>
@@ -54,7 +62,7 @@
     <section class="contact">
     </section>
     <footer class="footer">
-    </footer>
+    </footer> -->
     <script>
         const burgerBotton = document.getElementById("animation-menu");
         const burgerBar1 = document.getElementById("bar1");
@@ -76,6 +84,31 @@
         //     console.log("termino la animation")
         //     burgerBar1.style.animationPlayState = "paused";
         // }
+
+        document.getElementById('video').play();
+        //canvas
+        // var canvas = document.querySelector("canvas");
+        // var lienzo = canvas.getContext("2d");
+
+        // document.addEventListener('DOMContentLoaded', function(){
+        //     var v = document.querySelector('#v');
+        //     var canvas = document.querySelector('#c');
+        //     var ctx = canvas.getContext('2d');
+
+        //     v.addEventListener('loadedmetadata', function(){
+        //         canvas.width = this.videoWidth;
+        //         canvas.height = this.videoHeight;
+        //     });
+
+        //     var draw = function(){
+        //         canvas.getContext('2d').drawImage(v,0,0);
+        //     }
+
+        //     v.addEventListener('play', function(){
+        //         if(v.paused || v.ended) return;
+        //         draw();
+        //     });
+        // })
     </script>
 </body>
 </html>

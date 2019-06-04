@@ -39,7 +39,7 @@ body{
 .header {
     width: 100%;
     height: 44px;
-    background: #1B2127;
+    background: #2F2C2E;
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-between; */
@@ -47,24 +47,43 @@ body{
     font-size: 15px;
     position: fixed;
 }
+.header-menu{
+    height: inherit;
+    width: 44px;
+}
 
 .header .container a {
     color: white;
     text-decoration: none;
-    padding: 0 10px;
+    /* padding: 0 10px; */
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* display: flex;
     align-items: center; */
 }
 
 .header ol{
-    display: flex;
+    /* display: flex;
+    list-style: none; */
     height: inherit;
-    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .header ol li{
     height: inherit;
+}
+
+.header.container.image{
+    height: 44px;
+    width: 44px;
+}
+
+.header img{
+    width: 44px;
+    height: 44px;
 }
 /* .tipografia-name{
     font-size: 25px;
@@ -87,6 +106,12 @@ body{
     top: 25px; */
 }
 
+.square-menu{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .container-menu{
     width: 19px;
     height: 10px;
@@ -191,7 +216,14 @@ body{
     color: white;
     width: 100%;
     height: 100vh;
-    background-color: cornflowerblue;
+    background-color: black;
+}
+
+.canvas-video{
+}
+.hero video{
+    width: 100vw;
+    height: 100vh;
 }
 
 .container-hero{
@@ -226,3 +258,39 @@ body{
     /* Lato 600 */
 }
 
+/* MEDIA QUERIES */
+/* Mobile */
+@media screen and (max-width: 376px){
+    /* HEADER */
+    .header{
+        height: 48px;
+    }
+    .container{
+        justify-content: space-between;
+    }
+    .header a{
+        width: 70px;
+        padding-left: 6px;
+    }
+    .header-menu{
+        width: 70px;
+        justify-content: center;
+    }
+    .header-menu ol{
+        display: flex;
+        justify-content: center;
+    }
+    .square-menu{
+        width: 66px;
+        justify-content: center;
+    }
+    .container-menu{
+        padding: 0;
+    }
+
+    /* HERO */
+    .hero{
+        background-clip: 
+    }
+
+}
