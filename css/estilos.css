@@ -290,7 +290,7 @@ body{
 
     /* HERO */
     .hero{
-        background-clip: 
+        background-color: black; 
     }
 
 }
