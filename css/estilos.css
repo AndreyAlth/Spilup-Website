@@ -154,7 +154,7 @@ body{
 .sidenav{
     height: 100%;
     width: 150px;
-    background-color: #1B2127;
+    background-color: #2F2C2E;
     padding: 44px 10px 10px;
     position: fixed;
     z-index: 1  ;
@@ -286,6 +286,11 @@ body{
     }
     .container-menu{
         padding: 0;
+    }
+    
+    .sidenav{
+        height: 100%;
+        width: 65px;
     }
 
     /* HERO */

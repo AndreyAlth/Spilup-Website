@@ -1,179 +1,185 @@
+/* Game list
+Adventure Time\
+Apex/
+Batman 3 \
+Call of duty 4/
+Disneyland
+Doom
+Epic Micker 2
+Feeding frenzy
+Fornite/
+GTA V/
+Gear of wars 4/
+Ghost Recon/
+Halo 5
+Minecraft\
+Mortal Combat X/
+PUBG/
+Paladins\
+Plants vs Zombies/
+Red dead redemption II/
+Roblox/
+Sea of thieves/
+Viva pinata
+Surviving mars/
+The walking dead */
 body{
     background: white;
     margin: 0;
     
 }
-/* ---Header--- */
-.header {
-    width: 100%;
-    height: 44px;
-    background: #2F2C2E;
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 15px;
-    position: fixed;
-}
-.header-menu{
-    height: inherit;
-    width: 44px;
-}
-
-.header .container a {
-    color: white;
-    text-decoration: none;
-    /* padding: 0 10px; */
-    height: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* display: flex;
-    align-items: center; */
-}
-
-.header ol{
-    /* display: flex;
-    list-style: none; */
-    height: inherit;
-    padding: 0;
-    margin: 0;
-}
-
-.header ol li{
-    height: inherit;
-}
-
-.header.container.image{
-    height: 44px;
-    width: 44px;
-}
-
-.header img{
-    width: 44px;
-    height: 44px;
-}
-/* .tipografia-name{
-    font-size: 25px;
-} */
-
-/* ---Burguer Menu--- */
-.burguer-menu{
-    width: 19px;
-    height: 19px;
-    /* background-color: aquamarine; */
-    color: white;
-    font-size: 19px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    /* line-height: 40px; */
-    text-align: center;
-    /* position: fixed; */
-    /* right: 0;
-    top: 25px; */
-}
-
-.square-menu{
-    height: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.container-menu{
-    width: 19px;
-    height: 10px;
-    padding-right: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-
-}
-
-.m{
-    width: inherit;
-    height: 2px;
-    background-color: white;
-    margin: 2px 0 ;
-}
-
-.bar1{
-    /* animation-name: none; */
-    /* animation-duration: 0.4s; */
-    transition: 0.4s;
-}
-
-.bar2{
-    /* animation-name: none; */
-    /* animation-duration: 0.4s; */
-    transition: 0.4s;
-}
-
-.change1{
-    transform: translateY(3px)  scale(0.84) rotate(45deg);
-}
-
-.change2{
-    transform: translateY(-3px) scale(0.84) rotate(-45deg);
-}
-
-.sidenav{
-    height: 100%;
-    width: 150px;
-    background-color: #1B2127;
-    padding: 44px 10px 10px;
-    position: fixed;
-    z-index: 1  ;
-    top: 0;
-    right: -200px;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.cgnav{
-    right: 0;
-}
-
-.sidenav a{
-    color: #BBBBBB;
-    font-size: 15px;
-    padding: 0px 10px 20px;
-    text-decoration: none;
-    display: block;
-    transition: 0.3s;
-}
-
-.container{
-    width: 100%;
-    height: inherit;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.sidenav a:hover{
-    color: #EEEEEE;
-}
 
 /* GRID */
 .gridContainer{
-    margin-top: 60px;
+    background: white;
+    /* margin-top: 60px; */
+    /* padding-top: 1em; */
+    padding: 4.7em 6.25em 0 6.25em;
 
     display: grid;
-    grid-template-columns: repeat(5, 200px);
-    grid-template-rows: repeat(4, 273.97px);
+    grid-template-columns: repeat(4, minmax(139px, 288px));
+    grid-template-rows: repeat(5, 492px);
 
     /* espacios */
-    grid-gap: 40px 30px;
+    grid-gap: 1.25em 1.875em;
 
-    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
     /* align-items: center; */
+
+    /* grid implicito */
+    grid-auto-flow: row;
+    grid-auto-rows: repeat(3,273px);
+
 
 }
 .game{
-    background: lightgreen;
-    border: 1px solid black;
+    background: white;
+
+    /* defining a grid */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 85% 15%;
+
+}
+.img{
+    background: #2F2C2E;
+    background-size: cover;
+
+}
+.gameTitle{
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'IBM Plex Sans', sans-serif; 
+}
+
+/* Adding the backgrounds */
+.img1{
+    background-image: url('../Images/covers/adventure_cover.jpg');
+    background-size: 100% 100%;
+    /* background-size: cover; */
+}
+.img2{
+    background-color: aqua;
+    background-image: url('../Images/covers/apex_cover.jpg');
+    background-size: 100% 100%;
+}
+.img3{
+    background-color: aqua;
+    background-image: url('../Images/covers/batman_cover.png');
+    background-size: 100% 100%;
+}
+.img4{
+    background-color: aqua;
+    background-image: url('../Images/covers/COD4.jpg');
+    background-size: 100% 100%;
+}
+.img5{
+    background-color: aqua;
+    background-image: url('../Images/covers/fornite.png');
+    background-size: 100% 100%;
+}
+.img6{
+    background-color: aqua;
+    background-image: url('../Images/covers/gta_v_cover.jpg');
+    background-size: 100% 100%;
+}
+.img7{
+    background-color: aqua;
+    background-image: url('../Images/covers/gear4_cover.jpg');
+    background-size: 100% 100%;
+}
+.img8{
+    background-color: aqua;
+    background-image: url('../Images/covers/ghost_cover.png');
+    background-size: 100% 100%;
+}
+.img9{
+    background-color: aqua;
+    background-image: url('../Images/covers/minecraft_cover.jpg');
+    background-size: 100% 100%;
+}
+.img10{
+    background-color: aqua;
+    background-image: url('../Images/covers/mortal_cover.jpg');
+    background-size: 100% 100%;
+}
+.img11{
+    background-color: aqua;
+    background-image: url('../Images/covers/pubg_cover.jpg');
+    background-size: 100% 100%;
+}
+.img12{
+    background-color: aqua;
+    background-image: url('../Images/covers/paladins_cover.jpg');
+    background-size: 100% 100%;
+}
+.img13{
+    background-color: aqua;
+    background-image: url('../Images/covers/plants_cover.jpg');
+    background-size: 100% 100%;
+}
+.img14{
+    background-color: aqua;
+    background-image: url('../Images/covers/red_cover.jpg');
+    background-size: 100% 100%;
+}
+.img15{
+    background-color: aqua;
+    background-image: url('../Images/covers/roblox_cover.jpg');
+    background-size: 100% 100%;
+}
+.img16{
+    background-color: aqua;
+    background-image: url('../Images/covers/sea_cover.jpg');
+    background-size: 100% 100%;
+}
+.img17{
+    background-color: aqua;
+    background-image: url('../Images/covers/surviving_cover.jpg');
+    background-size: 100% 100%;
+}
+.img18{
+    background-color: aqua;
+    background-image: url('../Images/covers/walking.jpg');
+    background-size: 100% 100%;
+}
+
+/* Media query */
+@media screen and (max-width: 376px){
+    .gridContainer{
+        padding: 58px 15px 0 15px;
+        grid-template-columns: repeat(2, 132px);
+        grid-template-rows: repeat(9, 246px);
+        justify-content: center;
+        grid-gap: 40px 40px;
+    }
+    .gameTitle{
+        font-size: 13px;
+    }
+    h3{
+        margin-top: 5px;
+    }
 
 }
