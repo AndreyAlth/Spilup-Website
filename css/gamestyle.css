@@ -54,7 +54,6 @@ body{
 }
 .game{
     background: white;
-
     /* defining a grid */
     display: grid;
     grid-template-columns: 1fr;
