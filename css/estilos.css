@@ -281,15 +281,6 @@ span{
 #v{
     width: 100vw;
 }
-/* #v{
-    position: fixed;
-    z-index: 0;
-    right: 0;
-    top: 44px;
-    min-width: 100%; 
-    min-height: calc(100vh - 44px);
-    min-height: 100vh;
-} */
 
 /* -----Catalog-Games----- */
 .container-catalog{
