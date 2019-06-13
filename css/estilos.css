@@ -280,6 +280,8 @@ span{
 }
 #v{
     width: 100vw;
+    /* zoom: 160%; */
+    /* left: -70px; */
 }
 
 /* -----Catalog-Games----- */
@@ -345,7 +347,8 @@ span{
     }
     #v{
         position: absolute;
-        top: 48px;
+        zoom: 200%;
+        left: -50%;
     }
 
 }
