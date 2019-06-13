@@ -19,27 +19,11 @@ function animationMenu(evento){
 //     burgerBar1.style.animationPlayState = "paused";
 // }
 
-document.getElementById('video').play();
 //canvas
-// var canvas = document.querySelector("canvas");
-// var lienzo = canvas.getContext("2d");
 
-// document.addEventListener('DOMContentLoaded', function(){
-//     var v = document.querySelector('#v');
-//     var canvas = document.querySelector('#c');
-//     var ctx = canvas.getContext('2d');
+var canvas = document.getElementById('c');
+var ctx = canvas.getContext('2d');
 
-//     v.addEventListener('loadedmetadata', function(){
-//         canvas.width = this.videoWidth;
-//         canvas.height = this.videoHeight;
-//     });
-
-//     var draw = function(){
-//         canvas.getContext('2d').drawImage(v,0,0);
-//     }
-
-//     v.addEventListener('play', function(){
-//         if(v.paused || v.ended) return;
-//         draw();
-//     });
-// })
+document.addEventListener('DOMContentLoaded', function(){
+  console.log('si funciona');
+});
