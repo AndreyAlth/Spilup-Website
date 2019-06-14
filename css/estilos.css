@@ -344,6 +344,11 @@ span{
     .cgnav{
         right: 0;
     }
+    .sidenav a{
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
 
     /* HERO */
     .hero{
