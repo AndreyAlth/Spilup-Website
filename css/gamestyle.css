@@ -1,28 +1,33 @@
 /* Game list
-Adventure Time\
+Adventure Time\ deleted
+Alien Himinid
 Apex/
-Batman 3 \
 Call of duty 4/
-Disneyland
 Doom
-Epic Micker 2
-Feeding frenzy
+Everspace
+Farminf simulador 17/
+Feeding frenzy 2
+Fifa 18/
 Fornite/
 GTA V/
 Gear of wars 4/
 Ghost Recon/
 Halo 5
-Minecraft\
+Human fall flat/
+Minecraft/
 Mortal Combat X/
+Ori/
 PUBG/
 Paladins\
 Plants vs Zombies/
 Red dead redemption II/
+Riverbond/
 Roblox/
 Sea of thieves/
+Los Sims 4
+supermarket shriek/
 Viva pinata
-Surviving mars/
-The walking dead */
+Surviving mars/ */
 body{
     background: white;
     margin: 0;
@@ -38,7 +43,7 @@ body{
 
     display: grid;
     grid-template-columns: repeat(4, minmax(139px, 288px));
-    grid-template-rows: repeat(5, 492px);
+    grid-template-rows: repeat(6, 492px);
 
     /* espacios */
     grid-gap: 1.25em 1.875em;
@@ -76,23 +81,23 @@ body{
 
 /* Adding the backgrounds */
 .img1{
-    background-image: url('../Images/covers/adventure_cover.jpg');
+    background-image: url('../Images/covers/apex_cover.jpg');
     background-size: 100% 100%;
     /* background-size: cover; */
 }
 .img2{
     background-color: aqua;
-    background-image: url('../Images/covers/apex_cover.jpg');
+    background-image: url('../Images/covers/COD4.jpg');
     background-size: 100% 100%;
 }
 .img3{
     background-color: aqua;
-    background-image: url('../Images/covers/batman_cover.png');
+    background-image: url('../Images/covers/farming_cover.jpg');
     background-size: 100% 100%;
 }
 .img4{
     background-color: aqua;
-    background-image: url('../Images/covers/COD4.jpg');
+    background-image: url('../Images/covers/fifa_18_coverl.jpg');
     background-size: 100% 100%;
 }
 .img5{
@@ -117,52 +122,67 @@ body{
 }
 .img9{
     background-color: aqua;
-    background-image: url('../Images/covers/minecraft_cover.jpg');
+    background-image: url('../Images/covers/human_fall_cover.jpg');
     background-size: 100% 100%;
 }
 .img10{
     background-color: aqua;
-    background-image: url('../Images/covers/mortal_cover.jpg');
+    background-image: url('../Images/covers/minecraft_cover.jpg');
     background-size: 100% 100%;
 }
 .img11{
     background-color: aqua;
-    background-image: url('../Images/covers/pubg_cover.jpg');
+    background-image: url('../Images/covers/mortal_cover.jpg');
     background-size: 100% 100%;
 }
 .img12{
     background-color: aqua;
-    background-image: url('../Images/covers/paladins_cover.jpg');
+    background-image: url('../Images/covers/ori_cover.jpg');
     background-size: 100% 100%;
 }
 .img13{
     background-color: aqua;
-    background-image: url('../Images/covers/plants_cover.jpg');
+    background-image: url('../Images/covers/pubg_cover.jpg');
     background-size: 100% 100%;
 }
 .img14{
     background-color: aqua;
-    background-image: url('../Images/covers/red_cover.jpg');
+    background-image: url('../Images/covers/paladins_cover.jpg');
     background-size: 100% 100%;
 }
 .img15{
     background-color: aqua;
-    background-image: url('../Images/covers/roblox_cover.jpg');
+    background-image: url('../Images/covers/plants_cover.jpg');
     background-size: 100% 100%;
 }
 .img16{
     background-color: aqua;
-    background-image: url('../Images/covers/sea_cover.jpg');
+    background-image: url('../Images/covers/red_cover.jpg');
     background-size: 100% 100%;
 }
 .img17{
     background-color: aqua;
-    background-image: url('../Images/covers/surviving_cover.jpg');
+    background-image: url('../Images/covers/riverbond.jpg');
     background-size: 100% 100%;
 }
 .img18{
     background-color: aqua;
-    background-image: url('../Images/covers/walking.jpg');
+    background-image: url('../Images/covers/roblox_cover.jpg');
+    background-size: 100% 100%;
+}
+.img19{
+    background-color: aqua;
+    background-image: url('../Images/covers/sea_cover.jpg');
+    background-size: 100% 100%;
+}
+.img20{
+    background-color: aqua;
+    background-image: url('../Images/covers/supermarket.jpg');
+    background-size: 100% 100%;
+}
+.img21{
+    background-color: aqua;
+    background-image: url('../Images/covers/surviving_cover.jpg');
     background-size: 100% 100%;
 }
 

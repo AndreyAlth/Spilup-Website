@@ -1,0 +1,75 @@
+body{
+    margin: 0px;
+}
+.poweraContainerGrid{
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60vh 10vh 30vh;
+
+    grid-template-areas:"image image" 
+                        "instructions instructions"
+                        "buttonLeft buttonRight";
+
+    /* grid-gap: 10px 10px; */
+}
+.item{
+    border: 1px black solid;
+}
+.image{
+    grid-area: image;
+    background-image: url('../Images/pdp_control.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: white;
+    background-clip: border-box;
+    
+}
+.instructions{
+    grid-area: instructions;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    
+}
+.leftContainer{
+    grid-area: buttonLeft;
+    
+    /* background-image: url('../Images/left.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; */
+    
+}
+#buttonLeft{
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/left.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; 
+    background-color: white;
+
+    display: none;
+}
+
+
+.rightContainer{
+    grid-area: buttonRight;
+
+}
+#buttonRight{
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/right.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: white;
+}
+
