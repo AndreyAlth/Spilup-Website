@@ -191,7 +191,7 @@ body{
     .gridContainer{
         padding: 58px 15px 0 15px;
         grid-template-columns: repeat(2, 132px);
-        grid-template-rows: repeat(9, 246px);
+        grid-template-rows: repeat(11, 246px);
         justify-content: center;
         grid-gap: 40px 40px;
     }
