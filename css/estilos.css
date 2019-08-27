@@ -363,6 +363,54 @@ span{
     /* zoom: 160%; */
     /* left: -70px; */
 }
+
+/* 3D section */
+.printingContainer{
+    width: 100vw;
+    height: 100vh;
+    background: #FBFBFB;
+    position: relative;
+}
+.printingImageContainer{
+    width: 500px;
+    height: 320px;
+    /* border: black 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: calc(45% - 250px);
+    top: 15%;
+}
+.printingTextContainer{
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+}
+.printingTextContainer h2{
+    font-size: 33px;
+}
+.printingButtonPrint{
+    position: absolute;
+    left: calc(48% - 46px);
+    bottom: 5%;
+    width: 90px;
+    height: 40px;
+    border: #BBBBBB 1px solid;
+    border-radius: 10px;
+    background: rgba(59, 57, 57, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.printingButtonPrint a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.printingButtonPrint a:hover{
+    text-decoration: underline;
+}
 /* .slide{
     position: absolute;
     z-index: 2;
