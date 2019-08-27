@@ -35,15 +35,19 @@
 body{
     margin: 0;
     height: 100vh;
+    position: relative;
 }
 /* ---Header--- */
 .header {
-    width: 100%;
+    width: 80%;
     height: 44px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(99, 93, 93, 0.288);
+    border: #BBBBBB 1px solid;
     display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
+    position: absolute;
+    top: 35px;
+    left: 10%;
+    right: 10%;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 15px;
     position: fixed;
@@ -78,24 +82,19 @@ body{
     height: inherit;
 }
 
-/* .header.container.image{
-    height: 44px;
-    width: 44px;
+.headerFeaturesContainer{
+    display: flex;
+    position: absolute;
+    right: 3%;
 }
 
-.header img{
-    width: 44px;
-    height: 44px;
-} */
-/* .tipografia-name{
-    font-size: 25px;
-} */
+.headerFeaturesContainer a:nth-last-of-type(2){
+    padding-right: 30px;
+}
 
 .logo{
-    background-size: 39px 44px;
-    background-repeat: no-repeat;
-    background-image: url('../Images/spilup_white_logo.png');
-    background-position: center center;
+    position: absolute;
+    left: 3%;
 }
 span{
     -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
@@ -227,8 +226,9 @@ span{
 .hero{
     color: white;
     width: 100%;
-    height: calc(100vh - 44px);
-    background-color: black;
+    height: 100vh;
+    /* height: calc(100vh - 44px); */
+    /* background-color: black; */
     /* padding-top: 44px; */
     /* margin-top: 44px; */
     position: relative;
@@ -237,13 +237,62 @@ span{
     align-items: center;
     overflow: hidden;
 }
+
+
+.imageContainer{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+.imageContainer img{
+    width: 100%;
+}
+.landingContainer{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo"
+                         "link";
+}
+.linkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    grid-area: link;
+}
+.landingContainer a{
+    background: #bdbdbd;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    font-size: 25px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    border-radius: 10px;
+}
+.titleContainer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .hero h1{
     text-align: center;
-    z-index: 2;
+    font-family: 'IBM Plex Sans', sans-serif;
+    grid-area: titulo;
+    font-size: 50px;
+    margin: 0;
 }
 
 
-.container-hero{
+/* .container-hero{
     width: inherit;
     height: inherit;
     display: flex;
@@ -253,10 +302,10 @@ span{
     font-weight: 400;
     font-family:'Fjalla One',sans-serif;
     font-size: 44px;
-    /* 'Fjalla One' 450*/
+    'Fjalla One' 450*/
     /* Roboto 550 */
-    /* Lato 600 */
-}
+    /* Lato 600
+} */
 
 /* canvas */
 #c{
@@ -330,7 +379,7 @@ span{
     justify-content: center;
 } */
 /* -----Catalog-Games----- */
-.container-catalog{
+/* .container-catalog{
     width: 100%;
     height: 100vh;
     background-color: aqua;
@@ -341,10 +390,10 @@ span{
     font-weight: 450;
     font-family:'Fjalla One',sans-serif;
     font-size: 42px;
-    /* 'Fjalla One' 450*/
+    'Fjalla One' 450*/
     /* Roboto 550 */
-    /* Lato 600 */
-}
+    /* Lato 600
+} */
 
 /* MEDIA QUERIES */
 /* Mobile */

@@ -1,3 +1,8 @@
 Images/
+<<<<<<< HEAD
 *.jpg
 *.png
+=======
+*.png
+*jpg
+>>>>>>> header
