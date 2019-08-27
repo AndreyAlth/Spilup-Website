@@ -266,8 +266,8 @@ span{
     /* height: calc(100vh - 44px); */
     height: 100vh;
 }
-.video-container{
-    position: fixed;
+.heroContainer{
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -278,12 +278,43 @@ span{
     justify-content: center;
     align-items: center;
 }
+
+.heroImageContainer{
+    width: 100vw;
+    height: 100vh;
+}
+.heroImageContainer img{
+    width: 100vw;
+    height: 100vh;
+}
+.heroButtonPlay{
+    width: 66px;
+    height: 40px;
+    position: absolute;
+    left: 48%;
+    bottom: 5%;
+    border: #BBBBBB 1px solid;
+    border-radius: 10px;
+    background: rgba(59, 57, 57, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroButtonPlay a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.heroButtonPlay a:hover {
+    text-decoration: underline;
+}
+
 #v{
     width: 100vw;
     /* zoom: 160%; */
     /* left: -70px; */
 }
-.slide{
+/* .slide{
     position: absolute;
     z-index: 2;
     width: 100%;
@@ -297,7 +328,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 /* -----Catalog-Games----- */
 .container-catalog{
     width: 100%;
