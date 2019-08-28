@@ -405,47 +405,63 @@ span{
 }
 
 /* 3D section */
-.printingContainer{
+.printing{
+    color: white;
     width: 100vw;
     height: 100vh;
-    background: #FBFBFB;
     position: relative;
-}
-.printingImageContainer{
-    width: 500px;
-    height: 320px;
-    /* border: black 1px solid; */
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+.printingContainer{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.printingImageContainer{
+    width: 100vw;
+    height: 100vh;
+}
+.printingImageContainer img{
+    width: 100vw;
+    height: 100vh;
+}
+.printingButtonPrintContainer{
+    width: 100vw;
+    height: 36px;
     position: absolute;
-    left: calc(45% - 250px);
-    top: 15%;
+    bottom: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.printingTextContainer{
-    position: absolute;
-    bottom: 20%;
-    left: 30%;
-}
-.printingTextContainer h2{
-    font-size: 33px;
-}
+
 .printingButtonPrint{
-    position: absolute;
-    left: calc(48% - 46px);
-    bottom: 5%;
-    width: 90px;
-    height: 40px;
-    border: #BBBBBB 1px solid;
-    border-radius: 10px;
+    width: 100px;
+    height: 28px;
+    /* position: absolute;
+    left: 48%;
+    bottom: 5%; */
+    border: #707070 3px solid;
+    border-radius: 14px;
     background: rgba(59, 57, 57, 0);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .printingButtonPrint a{
-    color: black;
-    font-weight: bold;
+    color: #707070;
+    font-weight: normal;
+    font-size: 20px;
     text-decoration: none;
 }
 .printingButtonPrint a:hover{
