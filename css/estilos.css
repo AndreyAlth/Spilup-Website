@@ -2,6 +2,15 @@
 /* #0b0b0b */
 /* Icon */
 @font-face {
+    font-family: "SF Pro Text";
+    src: url("../fonts/tipography/SF-Pro-Text-Regular.otf");
+    src: 
+    url("../fonts/tipography/SF-Pro-Text-Regular.otf") format("woff"),
+    url("../fonts/tipography/SF-Pro-Text-Regular.otf") format("opentype"),
+    url("../fonts/tipography/SF-Pro-Text-Regular.otf") format("svg");
+    }
+
+@font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?vtmydu');
     src:  url('../fonts/icomoon.eot?vtmydu#iefix') format('embedded-opentype'),
@@ -36,6 +45,7 @@ body{
     margin: 0;
     height: 100vh;
     position: relative;
+    font-family: 'SF Pro Text';
 }
 /* ---Header--- */
 .header {
@@ -45,7 +55,6 @@ body{
     border: #BBBBBB 1px solid;
     display: flex;
     justify-content: center;
-    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 15px;
     position: fixed;
     z-index: 3;
@@ -224,31 +233,25 @@ span{
 /* ---Hero--- */
 .hero{
     color: white;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    /* height: calc(100vh - 44px); */
-    /* background-color: black; */
-    /* padding-top: 44px; */
-    /* margin-top: 44px; */
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
-
-
 .imageContainer{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: absolute;
     z-index: 1;
 }
 .imageContainer img{
-    width: 100%;
+    width: 100vw;
 }
 .landingContainer{
-    width: 100%;
+    width: 100vw;
     position: absolute;
     z-index: 2;
     display: grid;
@@ -335,22 +338,32 @@ span{
     width: 100vw;
     height: 100vh;
 }
-.heroButtonPlay{
-    width: 66px;
-    height: 40px;
+.heroButtonPlayContainer{
+    width: 100vw;
+    height: 36px;
     position: absolute;
+    bottom: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroButtonPlay{
+    width: 80px;
+    height: 28px;
+    /* position: absolute;
     left: 48%;
-    bottom: 5%;
-    border: #BBBBBB 1px solid;
-    border-radius: 10px;
+    bottom: 5%; */
+    border: #707070 3px solid;
+    border-radius: 14px;
     background: rgba(59, 57, 57, 0);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .heroButtonPlay a {
-    color: black;
-    font-weight: bold;
+    color: #707070;
+    font-weight: normal;
+    font-size: 20px;
     text-decoration: none;
 }
 .heroButtonPlay a:hover {
