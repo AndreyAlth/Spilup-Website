@@ -43,13 +43,15 @@
 /* ---Body--- */
 body{
     margin: 0;
+    width: 100vw;
     height: 100vh;
     position: relative;
+    overflow-x: hidden;
     font-family: 'SF Pro Text';
 }
 /* ---Header--- */
 .header {
-    width: 100vw;
+    width: calc(100vw - 2px);
     height: 44px;
     background: rgba(99, 93, 93, 0.288);
     border: #737373 1px solid;
@@ -66,10 +68,10 @@ body{
     justify-content: center;
     align-items: center;
 }
-.header-menu{
+/* .header-menu{
     height: inherit;
     width: 44px;
-}
+} */
 
 .headerContainer a {
     color: white;
@@ -82,31 +84,31 @@ body{
     padding: 0 110px;
 }
 
-.header ol{
-    /* display: flex;
-    list-style: none; */
+/* .header ol{
+    display: flex;
+    list-style: none;
     height: inherit;
     padding: 0;
     margin: 0;
-}
+} */
 
-.header ol li{
+/* .header ol li{
     height: inherit;
-}
+} */
 
-.headerFeaturesContainer{
+/* .headerFeaturesContainer{
     display: flex;
     position: absolute;
     right: 3%;
-}
+} */
 
-.headerFeaturesContainer a:nth-last-of-type(2){
+/* .headerFeaturesContainer a:nth-last-of-type(2){
     padding-right: 30px;
-}
+} */
 
-span{
+/* span{
     -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
-}
+} */
 
 /* ---Burguer Menu--- */
 .burguer-menu{
@@ -321,7 +323,7 @@ span{
     position: relative;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: black;;
     z-index: 1;
@@ -373,7 +375,7 @@ span{
 
 .footer{
     background-color: #F2F2F2;
-    width: 100%;
+    width: 100vw;
     height: 120px;
     display: flex;
     justify-content: center;
@@ -419,7 +421,7 @@ span{
     position: relative;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     /* background-color: black; */
     z-index: 1;
