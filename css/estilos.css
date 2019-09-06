@@ -234,11 +234,14 @@ body{
 .heroImageContainer{
     width: 100vw;
     height: 100vh;
+    background-image: url('../Images/white_control.jpg');
+    background-position: center;
+    background-size: cover;
 }
-.heroImageContainer img{
+/* .heroImageContainer img{
     width: 100vw;
     height: 100vh;
-}
+} */
 .heroButtonPlayContainer{
     width: 100vw;
     height: 36px;
@@ -296,6 +299,9 @@ body{
 .printingImageContainer{
     width: 100vw;
     height: 100vh;
+    background-image: url('../Images/3DHero.jpg');
+    background-position: center;
+    background-size: cover;
 }
 .printingImageContainer img{
     width: 100vw;
@@ -336,7 +342,7 @@ body{
 .footer{
     background-color: #F2F2F2;
     width: 100vw;
-    height: 120px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -409,6 +415,48 @@ body{
         height: auto;
         padding: 0;
         justify-content: center;
+    }
+    /* HERO */
+    .heroButtonPlayContainer{
+        bottom: 2.5vh;
+    }
+    .heroButtonPlay {
+        width: 60px;
+        height: 20px;
+    }
+    .heroButtonPlay a{
+        font-size: 18px;
+    }
+    /* 3D SECTION */
+    .printingButtonPrintContainer{
+        bottom: 2.5vh;
+    }
+    .printingButtonPrint{
+        width: 75px;
+        height: 20px;
+    }
+    .printingButtonPrint a{
+        font-size: 18px;
+    }
+    /* FOOTER */
+    .footer{
+        height: 90px;
+    }
+    .footerTextContainer p{
+        font-size: 10px;
+        margin-top: 0;
+        margin-bottom: 2px;
+    }
+    .socialLink{
+        width: 15px;
+        height: 15px;
+        margin: 0 1px;
+        background-size: 15px 15px;
+    }
+    .footerMailContainer p{
+        font-size: 10px;
+        margin: 0;
+        margin-top: 2px;
     }
     /* .container{
         justify-content: space-between;
