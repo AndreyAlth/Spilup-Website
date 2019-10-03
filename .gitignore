@@ -3,3 +3,5 @@ Images/
 *.png
 fonts/tipography
 *.otf
+.vscode/
+node_modules/

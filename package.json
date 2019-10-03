@@ -1,0 +1,25 @@
+{
+  "name": "spilup-website",
+  "version": "1.0.0",
+  "description": "Spilup website",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "^0.0.0",
+    "nodemon": "^1.19.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyAlth/Spilup-Website.git"
+  },
+  "author": "Andrey Alth andreyalth@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreyAlth/Spilup-Website/issues"
+  },
+  "homepage": "https://github.com/AndreyAlth/Spilup-Website#readme"
+}
